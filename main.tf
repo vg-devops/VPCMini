@@ -12,7 +12,7 @@ resource "aws_vpc" "VPC_Mini" {
 }
 
 resource "aws_internet_gateway" "Main_GW1" {
-  vpc_id = "${aws_vpc.Main_VPC.id}"
+  vpc_id = "${aws_vpc.VPC_Mini.id}"
 
   tags {
     Name = "Main_GW1"

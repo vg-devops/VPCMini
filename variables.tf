@@ -48,7 +48,3 @@ variable "local_IP_cidr" {
 variable "Availability_Zone_A" {
   // obtained from terraform.tfvars
 }
-
-variable "Availability_Zone_B" {
-  // obtained from terraform.tfvars
-}
