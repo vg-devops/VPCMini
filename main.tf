@@ -9,6 +9,8 @@ resource "aws_vpc" "VPC_Mini" {
   tags {
     Name = "VPC_Mini"
   }
+  enable_dns_support = true
+  enable_dns_hostnames = true
 }
 
 resource "aws_internet_gateway" "Main_GW1" {
