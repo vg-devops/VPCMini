@@ -24,3 +24,6 @@ resource "aws_instance" "first_instance" {
 
 }
 
+output "addresses" {
+  value = ["${aws_instance.first_instance.public_dns}", "${aws_instance.first_instance.associate_public_ip_address}" ]
+}
